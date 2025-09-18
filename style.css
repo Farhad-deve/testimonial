@@ -1,0 +1,168 @@
+:root {
+    --purple-50: #eee5ffff;
+    --purple-300: #c4a2f6ff;
+    --purple-500: #7541c8ff;
+    --white: #fff;
+    --grey-100: #e7eaeeff;
+    --grey-200: #cfcfcfff;
+    --grey-400: #676d7eff;
+    --grey-500: #48556aff;
+
+    --dark-blue: #19212eff;
+    --black: #121212ff;
+}
+.d-flex {
+    display: flex;
+}
+.d-grid {
+    display: grid;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+.align-i-center {
+    align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+.gap-1 {
+    gap: 1rem;
+}
+.gap-2 {
+    gap: 2rem;
+}
+
+.bor-rad-10 {
+    border-radius: 10px;
+}
+.bor-rad-50-per {
+    border-radius: 50%;
+}
+
+.mar-0 {
+    margin: 0;
+}
+.pad-2 {
+    padding: 2rem;
+}
+
+.font-w-500 {
+    font-weight: 500;
+}
+.font-w-600 {
+    font-weight: 600;
+}
+
+.color-white {
+    color: var(--white);
+}
+.color-pur-300 {
+    color: var(--purple-300);
+}
+.color-pur-50 {
+    color: var(--purple-50);
+}
+.color-grey-100 {
+    color: var(--grey-100);
+}
+.color-grey-200 {
+    color: var(--grey-200);
+}
+.color-grey-400 {
+    color: var(--grey-400);
+}
+.color-grey-500 {
+    color: var(--grey-500);
+}
+.box-shadow {
+    box-shadow: 15px 30px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.back-ava-size {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    min-height: 100vh;
+    background-color: var(--grey-100);
+}
+main {
+    max-width: 1200px;
+    grid-auto-flow: column;
+    grid-template-columns: 3.5fr 1fr;
+}
+p {
+    font-size: 13px;
+}
+h2 {
+    font-size: 1.2rem;
+}
+h3 {
+    font-size: 1.1rem;
+}
+.grid-box-1 {
+    grid-template-columns: 2.5fr 1fr;
+}
+.grid-box-2 {
+    grid-template-columns: 1fr 2.5fr;
+}
+.daniel {
+    background-color: var(--purple-500);
+    position: relative;
+    z-index: 1;
+}
+.jonathan {
+    background-color: var(--grey-500);
+}
+.jeanette {
+    background-color: var(--white);
+}
+.patrick {
+    background-color: var(--dark-blue);
+}
+.kira {
+    background-color: var(--white);
+}
+.back-ava {
+    background-color: var(--purple-300);
+}
+.back-ava-2 {
+    background-color: var(--grey-400);
+}
+.back-ava-3 {
+    background-color: var(--purple-500);
+}
+.ava {
+    width: 90%;
+    height: auto;
+}
+.quote-sym {
+    position: absolute;
+    top: 0;
+    right: 3rem;
+    z-index: -1;
+}
+
+@media (max-width: 540px) {
+    body {
+        margin: 1rem;
+    }
+    main {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        gap: 1rem;
+    }
+    .grid-box-1 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .grid-box-2 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .two-boxes {
+        gap: 1rem;
+    }
+}
